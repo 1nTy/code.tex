@@ -1,0 +1,43 @@
+\usepackage{listings}
+\usepackage[scaled]{beramono}
+
+\definecolor{keywords}{RGB}{255,0,90}		% fucsia
+\definecolor{identifier}{RGB}{60,179,113}		% green
+\definecolor{strings}{RGB}{20,103,204}		% light-blue
+\definecolor{comments}{RGB}{140,140,140}	% light-grey
+
+\lstset{
+		showspaces=false, showtabs=false, showstringspaces=false,
+		breaklines=true, breakatwhitespace=true,
+		frame=lines, framesep=10pt,
+		columns=fullflexible,
+		basicstyle=\scriptsize \ttfamily,
+		keywordstyle=\color{keywords},
+		identifierstyle=\color{identifier} \bfseries,
+		stringstyle=\color{strings},
+		commentstyle=\color{comments} \emph,
+}
+
+\lstnewenvironment{code_asm} {\lstset{language=Assembler}} {}
+\lstnewenvironment{code_awk} {\lstset{language=Awk}} {}
+\lstnewenvironment{code_bash} {\lstset{language=bash}} {}
+\lstnewenvironment{code_c} {\lstset{language=C}} {}
+\lstnewenvironment{code_objc} {\lstset{language=[Objective]C}} {}
+\lstnewenvironment{code_csharp} {\lstset{language=[Sharp]C}} {}
+\lstnewenvironment{code_c++} {\lstset{language=C++}} {}
+\lstnewenvironment{code_csh} {\lstset{language=csh}} {}
+\lstnewenvironment{code_html} {\lstset{language=HTML}} {}
+\lstnewenvironment{code_java} {\lstset{language=Java}} {}
+\lstnewenvironment{code_ksh} {\lstset{language=ksh}} {}
+\lstnewenvironment{code_lisp} {\lstset{language=Lisp}} {}
+\lstnewenvironment{code_lua} {\lstset{language=Lua}} {}
+\lstnewenvironment{code_make} {\lstset{language=make}} {}
+\lstnewenvironment{code_mathematica} {\lstset{language=Mathematica}} {}
+\lstnewenvironment{code_matlab} {\lstset{language=Matlab}} {}
+\lstnewenvironment{code_perl} {\lstset{language=Perl}} {}
+\lstnewenvironment{code_php} {\lstset{language=PHP}} {}
+\lstnewenvironment{code_python} {\lstset{language=Python}} {}
+\lstnewenvironment{code_ruby} {\lstset{language=Ruby}} {}
+\lstnewenvironment{code_sh} {\lstset{language=sh}} {}
+\lstnewenvironment{code_sql} {\lstset{language=SQL}} {}
+\lstnewenvironment{code_latex} {\lstset{language=[LaTeX]TeX}} {}
